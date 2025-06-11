@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# Django
+*.log
+*.pot
+*.mo
+*.db
+*.sqlite3
+media/
+staticfiles/
+static_root/
+local_settings.py
+db.sqlite3
+
+# VSCode
+.vscode/
+.history/
+.code-workspace
+
+# Virtualenv
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+env.bak/
+venv.bak/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.swp
+*.swo
+
+# Migrations (if generated manually)
+**/migrations/__pycache__/
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/*.pyd
+**/migrations/*.db
+**/migrations/*.sqlite3
+
+# Secrets (if applicable)
+*.env
+.env.*

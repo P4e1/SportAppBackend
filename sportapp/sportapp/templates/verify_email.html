@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подтверждение Email</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const key = "{{ key }}";
+
+            fetch(window.location.pathname, {
+                method: "POST",
+                headers: {
+                "Content-Type": "application/json"
+                },
+                body: JSON.stringify({})
+            })
+
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("message").textContent = "Email успешно подтверждён.";
+                } else {
+                    document.getElementById("message").textContent = "Ошибка подтверждения email.";
+                }
+            })
+            .catch(error => {
+                console.error("Ошибка запроса:", error);
+                document.getElementById("message").textContent = "Произошла ошибка. Повторите попытку позже.";
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2 id="message">Подтверждение...</h2>
+</body>
+</html>
