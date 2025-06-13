@@ -64,7 +64,7 @@ class Participants(models.Model):
     height = models.IntegerField()
     weight = models.IntegerField()
     numberOfCompetitions = models.IntegerField(blank=True, null=True)
-    rating = models.IntegerField(blank=True, null=True)
+    rating = models.FloatField(blank=True, null=True)
 
 
 class Teams(models.Model):
